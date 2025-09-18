@@ -11,6 +11,7 @@
 .header {
   background-image: var(--bg-img);
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -23,7 +24,6 @@
   right: 20px;
   grid-row: 1;
   align-self: start;
-  margin-bottom: 39px;
   color: var(--accent-color);
   font-family: var(--main-font), sans-serif;
   font-weight: var(--main-font-weight);
@@ -49,7 +49,7 @@
   justify-self: end;
   gap: var(--gap);
   align-self: start;
-  margin-top: 75px;
+  margin-top: 65px;
   padding: 0;
   list-style: none;
 }
@@ -114,10 +114,12 @@
   font-size: var(--focus-font-size);
   line-height: 0.825;
   text-shadow: 4px 4px var(--accent-color);
+  align-self: center;
 }
 
 .header__paragraph {
-  align-content: center;
+  align-self: end;
+  margin-bottom: 56px;
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
