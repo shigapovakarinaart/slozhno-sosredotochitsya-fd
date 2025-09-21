@@ -1,10 +1,12 @@
 .page {
   min-height: 100vh;
-  background: var(--page-bg-color) var(--page-bg-image) center;
+  background-color: var(--page-bg-color);
+  background-image: var(--page-bg-image);
+  background-position: center;
+  background-color: none;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: var(--general-padding);
 }
 
 .decorated-zone {
@@ -12,16 +14,16 @@
 }
 
 .header {
+  height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  height: 100vh;
   min-height: var(--header-min-height);
+  padding: var(--general-padding);
 }
 
 .header__rec-indicator {
   position: absolute;
-  right: var(--rec-indicator-right-position);
-  grid-row: 1;
+  right: var(--rec-indicator-position);
   align-self: start;
   color: var(--accent-color);
   font-family: var(--main-font), sans-serif;
@@ -33,7 +35,7 @@
 .header__rec-indicator::after {
   content: "";
   display: inline-block;
-  margin-left: var(--gap);
+  margin-left: var(--general-padding);
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--accent-color);
   background: var(--accent-color);
@@ -93,8 +95,8 @@
 }
 
 .decorated-zone::before {
-  top: 10px;
-  right: 10px;
+  right: var(--corner-position);
+  top: var(--corner-position);
   border-bottom: none;
   border-left: none;
 }
@@ -133,17 +135,20 @@
 }
 
 .main {
+  padding-right: var(--general-padding);
+  padding-left: var(--general-padding);
+  padding-top: 0;
   margin-top: 40px;
   font-family: var(--main-font), sans-serif;
   line-height: var(--main-line-height);
 }
 
-.main__article {
-  margin-bottom: var(--margin-article);
+.main__section {
+  margin-bottom: var(--margin-section);
 }
 
-.main__article-title {
-  margin-bottom: var(--margin-article-title);
+.main__section-title {
+  margin-bottom: var(--margin-section-title);
   color: var(--accent-color);
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
@@ -156,7 +161,7 @@
 }
 
 .main__paragraph-title-big-margin {
-  margin-bottom: var(--margin-article-title);
+  margin-bottom: var(--margin-section-title);
 }
 
 .main__paragraph-subtitle {
@@ -167,12 +172,12 @@
 }
 
 .main__paragraph {
-  color: var(--paragraph-color);
+  color: var(--paragraph-text-color);
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
 }
 
-.card {
+.text-group {
   margin-bottom: var(--margin-paragraph);
 }
 
@@ -210,7 +215,7 @@
   justify-content: center;
   align-content: center;
   height: 100vh;
-  min-height: 667px;
+  min-height: 668px;
   margin-top: 40px;
 }
 

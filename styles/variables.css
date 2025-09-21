@@ -3,25 +3,36 @@
   и их переопределение под различные устройства
 */
 :root {
+  /*page*/
   --page-bg-image: url(../images/cover-image-dark.png);
+  --page-bg-color: #000028;
+  /*fonts*/
   --main-font: "IBM Plex mono";
   --main-font-size: 18px;
   --main-font-weight: normal;
   --bold-font-weight: bold;
   --main-line-height: 23.4px;
+  --focus-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  /*gaps, paddings and margins*/
   --gap: 10px;
   --general-padding: 10px;
-  --header-min-height: 375px;
-  --rec-indicator-right-position: 20px;
+  --margin-top-themes-list: 65px;
+  --margin-section: 50px;
+  --margin-section-title: 20px;
+  --margin-paragraph: 20px;
+  /*colors*/
   --accent-color: #ff0070;
   --focus-color: #db00ff;
-  --focus-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --header-paragraph-color: #000028;
-  --paragraph-color: #F1B2CE;
+  --paragraph-text-color: #F1B2CE;
+  /*general*/
+  --header-min-height: 648px;
+  --rec-indicator-position: 20px;
   --paragraph-link-shadow: 2px 2px var(--accent-color);
-  --margin-article-title: 20px;
-  --margin-paragraph: 20px;
-  --margin-article: 50px;
-  --margin-top-themes-list: 65px;
-  --page-bg-color: #000028;
+  --corner-position: 10px;
+  
+ 
+
+
+  
 }
