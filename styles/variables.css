@@ -17,16 +17,18 @@
   --gap: 10px;
   --general-padding: 10px;
   --margin-top-themes-list: 65px;
+  --margintop-main:40px;
   --margin-section: 50px;
   --margin-section-title: 20px;
   --margin-paragraph: 20px;
+  --marin-footer: 40px;
   /*colors*/
   --accent-color: #ff0070;
   --focus-color: #db00ff;
   --header-paragraph-color: #000028;
   --paragraph-text-color: #F1B2CE;
   /*general*/
-  --header-min-height: 648px;
+  --header-footer-min-height: 668px;
   --rec-indicator-position: 20px;
   --paragraph-link-shadow: 2px 2px var(--accent-color);
   --corner-position: 10px;
