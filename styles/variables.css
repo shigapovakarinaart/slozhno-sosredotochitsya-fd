@@ -23,7 +23,10 @@
   --margin-paragraph: 20px;
   --marin-footer: 40px;
   /*colors*/
+  --header-button-hover-color: rgb(255, 0, 112, 0.4);
   --accent-color: #ff0070;
+  --header-color: #ff0070;
+  --main-title-color: #ff0070;
   --focus-color: #db00ff;
   --header-paragraph-color: #000028;
   --paragraph-text-color: #F1B2CE;
