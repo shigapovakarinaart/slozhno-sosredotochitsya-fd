@@ -2,9 +2,8 @@
   min-height: 100vh;
   background-color: var(--page-bg-color);
   background-image: var(--page-bg-image);
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -13,9 +12,9 @@
 }
 
 .header {
-  height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
   min-height: var(--header-footer-min-height);
   padding: var(--general-padding);
 }
@@ -99,8 +98,8 @@
 }
 
 .decorated-zone::before {
-  right: var(--corner-position);
   top: var(--corner-position);
+  right: var(--corner-position);
   border-bottom: none;
   border-left: none;
 }
@@ -139,10 +138,10 @@
 }
 
 .main {
+  margin-top: var(--margintop-main);
+  padding-top: 0;
   padding-right: var(--general-padding);
   padding-left: var(--general-padding);
-  padding-top: 0;
-  margin-top: var(--margintop-main);
   font-family: var(--main-font), sans-serif;
   line-height: var(--main-line-height);
 }
@@ -245,19 +244,20 @@
   }
 
   .header__title {
-    margin-left: -20px;
     justify-self: left;
+    margin-left: -20px;
   }
 
   .header__paragraph {
-    margin-bottom: 163px;
     justify-self: right;
     align-self: end;
     width: 364px;
     height: 117px;
+    margin-bottom: 163px;
   }
 
-  .section-why, .section-how {
+  .section-why,
+  .section-how {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
@@ -266,27 +266,26 @@
   .main__paragraph-title {
     grid-column: 1;
   }
-  
+
   .section-why .text-group,
   .section-how .text-group {
-    margin-bottom: 0;
     grid-column: 2;
+    margin-bottom: 0;
   }
 
   .section-title-what {
     width: 236px;
   }
 
-
   .main__galery-list {
     display: grid;
-    gap: var(--general-padding);
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
+    grid-template-areas:
       "img-sunset img-sunset img-food"
       "img-tape img-book img-food"
       "img-tape img-street img-street";
+    gap: var(--general-padding);
   }
 
   .main__galery-list-item {
@@ -332,18 +331,18 @@
   }
 
   .header__theme-menu-list {
-    justify-self: center;
     flex-direction: row;
+    justify-self: center;
   }
 
-  .header__title  {
+  .header__title {
     align-self: center;
   }
 
   .header__paragraph {
-    width: 491px; 
-    margin: 0;
     align-self: center;
+    width: 491px;
+    margin: 0;
   }
 
   .main__section-title {

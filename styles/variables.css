@@ -1,7 +1,3 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   /*page*/
   --page-bg-image: url(../images/cover-image-dark.png);
@@ -29,15 +25,10 @@
   --main-title-color: #ff0070;
   --focus-color: #db00ff;
   --header-paragraph-color: #000028;
-  --paragraph-text-color: #F1B2CE;
+  --paragraph-text-color: #f1b2ce;
   /*general*/
   --header-footer-min-height: 668px;
   --rec-indicator-position: 20px;
   --paragraph-link-shadow: 2px 2px var(--accent-color);
   --corner-position: 10px;
-  
- 
-
-
-  
 }
