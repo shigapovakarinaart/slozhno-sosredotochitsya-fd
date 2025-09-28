@@ -78,12 +78,12 @@
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  text-decoration: underline;
+  border-bottom: 1px solid var(--header-color);
   text-underline-offset: 1px;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--header-color);
+  border: 1px solid currentColor;
   pointer-events: none;
 }
 
@@ -194,7 +194,7 @@
 }
 
 .main__paragraph-link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--paragraph-text-color);
 }
 
 .main__paragraph-link:focus-visible {
@@ -252,12 +252,10 @@
     justify-self: right;
     align-self: end;
     width: 364px;
-    height: 117px;
     margin-bottom: 163px;
   }
 
-  .section-why,
-  .section-how {
+  .section-same-style {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
@@ -286,10 +284,6 @@
       "img-tape img-book img-food"
       "img-tape img-street img-street";
     gap: var(--general-padding);
-  }
-
-  .main__galery-list-item {
-    overflow: hidden;
   }
 
   .main_img {
