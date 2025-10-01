@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .decorated-zone {
@@ -356,14 +357,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content 1fr;
     gap: var(--general-padding);
+    grid-auto-flow: row;
   }
 
   .section-title-what {
-    grid-row: 1;
+    grid-column: 1 / -1;
   }
 
   .section-what .text-group {
-    grid-row: 2;
     margin: 0;
   }
 
